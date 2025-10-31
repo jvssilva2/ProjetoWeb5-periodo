@@ -1,14 +1,22 @@
 package com.example.demo.dto;
 
+import java.util.List; 
+
 public class TurmaDto {
     
     private int id;
-
     private String nome;
-
     private String curso;
-
     private String periodo;
+
+    private List<AlunoDto> alunos; 
+
+    public List<AlunoDto> getAlunos() {
+        return alunos;
+        
+    }
+
+
 
     public int getId() {
         return id;
@@ -40,5 +48,9 @@ public class TurmaDto {
 
     public void setPeriodo(String periodo) {
         this.periodo = periodo;
+    }
+
+    public void setAlunos(List<AlunoDto> alunos) {
+        this.alunos = alunos;
     }
 }
